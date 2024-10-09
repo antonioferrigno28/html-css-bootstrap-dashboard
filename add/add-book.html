@@ -82,15 +82,16 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-12 px-0"><h1 class="my-4">Nuovo Libro</h1></div>
+          <div class="col-12"><h1 class="my-4">Nuovo Libro</h1></div>
         </div>
         <!-- end first row -->
 
         <!-- form & second row -->
-        <form>
-          <div class="row border-bottom">
-            <!-- column name -->
-            <div class="col-6 mb-3 px-0 pe-2">
+        <div class="row">
+          <form class="row">
+            <div class="col-6">
+              <!-- column name -->
+
               <label for="name" class="form-label fw-medium fs-5"
                 >Nome autore</label
               >
@@ -101,121 +102,137 @@
                 placeholder="Inserisci il nome dell'autore"
                 required
               />
-            </div>
-            <!-- column-surname -->
-            <div class="col-6 mb-3 px-0 ps-4">
-              <label for="surname" class="form-label fw-medium fs-5"
-                >Cognome autore</label
-              >
-              <input
-                type="text"
-                class="form-control fw-medium"
-                id="surname"
-                placeholder="Inserisci il cognome dell'autore"
-                required
-              />
-            </div>
-            <!-- column-title -->
-            <div class="mb-3 px-0">
-              <label for="title" class="form-label fw-medium fs-5"
-                >Titolo</label
-              >
-              <input
-                type="text"
-                class="form-control fw-medium"
-                id="title"
-                placeholder="Inserisci il titolo del libro"
-                required
-              />
-              <div id="Title-help" class="form-text fw-medium">
-                Titolo versione italiana
               </div>
-            </div>
-            <!-- column-gender -->
-            <div class="mb-3 px-0">
-              <label for="gender" class="form-label fw-medium fs-5"
-                >Genere</label
-              >
-              <select
-                class="form-select"
-                id="gender"
-                aria-label="Default select example"
-                required
-              >
-                <option selected value="">Scegli il genere</option>
-                <option value="1">Uomo</option>
-                <option value="2">Donna</option>
-                <option value="3">Garen Player</option>
-                <option value="4">Altro</option>
-              </select>
-            </div>
-            <!-- column-year -->
-            <div class="mb-3 px-0">
-              <label for="year" class="form-label fw-medium fs-5"
-                >Anno di pubblicazione</label
-              >
-              <input
-                type="text"
-                class="form-control fw-medium"
-                id="year"
-                placeholder="Inserisci l'anno"
-                required
-              />
-            </div>
 
-            <!-- column-isbn -->
-            <div class="mb-5 px-0">
-              <label for="year" class="form-label fw-medium fs-5">ISBN#</label>
-              <input
-                type="text"
-                class="form-control fw-medium"
-                id="year"
-                placeholder="Inserisci il codice ISBN#"
-                required
-              />
-            </div>
-            <!-- End second row & border-bottom -->
-          </div>
-
-          <!-- third row -->
-          <div class="row">
-            <!-- column-note (textarea) -->
-            <div class="mt-4 mb-1 px-0">
-              <label for="noteText" class="form-label fw-medium fs-5"
-                >Note</label
-              >
-
-              <textarea
-                class="form-control fw-medium"
-                id="noteText"
-                rows="5"
-                placeholder="Inserisci eventuali note sul libro"
-              ></textarea>
-              <div class="form-check my-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label fw-medium"
-                  for="flexCheckDefault"
+              <!-- column-surname -->
+              <div class="col-6">
+                <label for="surname" class="form-label fw-medium fs-5"
+                  >Cognome autore</label
                 >
-                  Disponibile anche in digitale
-                </label>
+                <input
+                  type="text"
+                  class="form-control fw-medium"
+                  id="surname"
+                  placeholder="Inserisci il cognome dell'autore"
+                  required
+                />
+              </div>
+              <!-- column-title -->
+              <div class="mb-3">
+                <label for="title" class="form-label fw-medium fs-5"
+                  >Titolo</label
+                >
+                <input
+                  type="text"
+                  class="form-control fw-medium"
+                  id="title"
+                  placeholder="Inserisci il titolo del libro"
+                  required
+                />
+                <div id="Title-help" class="form-text fw-medium">
+                  Titolo versione italiana
+                </div>
+              </div>
+              <!-- column-gender -->
+
+              <div class="col-lg-4 my-3">
+                <label for="gender" class="form-label fw-medium fs-5"
+                  >Genere</label
+                >
+                <select
+                  class="form-select"
+                  id="gender"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected value="">Scegli il genere</option>
+                  <option value="1">Uomo</option>
+                  <option value="2">Donna</option>
+                  <option value="3">Garen Player</option>
+                  <option value="4">Altro</option>
+                </select>
+              </div>
+
+              <!-- column-year -->
+
+              <div class="col-lg-4 my-3">
+                <label for="year" class="form-label fw-medium fs-5"
+                  >Anno di pubblicazione</label
+                >
+                <input
+                  type="text"
+                  class="form-control fw-medium"
+                  id="year"
+                  placeholder="Inserisci l'anno"
+                  required
+                />
+              </div>
+
+              <!-- column-isbn -->
+
+              <div class="isbnInput my-3 col-lg-4">
+                <label for="isbn" class="form-label fw-medium fs-5"
+                  >ISBN#</label
+                >
+                <input
+                  type="text"
+                  class="form-control fw-medium"
+                  id="isbn"
+                  placeholder="Inserisci il codice ISBN#"
+                  required
+                />
+              </div>
+
+              <!-- End second row & border-bottom -->
+              <div class="col-12">
+                <hr class="border border-secondary border-1" />
               </div>
             </div>
 
-            <!-- column-submit button -->
-            <div class="col-12 ps-0">
-              <button class="btn btn-primary fw-medium" type="submit">
-                Aggiungi Libro
-              </button>
-            </div>
-          </div>
-          <!-- end form & third row -->
-        </form>
+            
+            
+              <!-- column-note (textarea) -->
+              <div class="col-12">  
+                <label for="noteText" class="form-label fw-medium fs-5"
+                  >Note</label
+                >
+
+                <textarea
+                  class="form-control fw-medium"
+                  id="noteText"
+                  rows="5"
+                  placeholder="Inserisci eventuali note sul libro"
+                ></textarea>
+              </div>
+              <div class="col-12 my-3">
+                <div class="form-check">
+                  <label
+                    class="form-check-label fw-medium"
+                    for="flexCheckDefault"
+                  >
+                    Disponibile anche in digitale
+                  </label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  
+                </div>
+                </div>
+              
+
+              <!-- column-submit button -->
+              <div class="col-12">
+                <button class="btn btn-primary fw-medium" type="submit">
+                  Aggiungi Libro
+                </button>
+              </div>
+            
+            <!-- end form -->
+          </form>
+        </div>
       </div>
     </main>
     <!-- Bootstrap JS -->
